@@ -119,7 +119,10 @@ def prepare_preposals(files, template_string, template_tag, with_pr=False):
     """
     Generic shared function to prepare proposal files
     """
-    tmpdir = tempfile.mkdtemp()
+    tmpdir = os.path.join(tempfile.mkdtemp(), "proposals")
+    if not os.path.exists(tmpdir):
+        os.makedirs(tmpdir)
+
     final_files = []
     for filename in files:
 
