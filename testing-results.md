@@ -16,7 +16,6 @@ The deliverables for this proposal include:
 * A web server intended for uploading and visualizing results
 * Actions or other automated means to upload results
 
-
 #### Collaborations
 
 * Research Software Engineers
