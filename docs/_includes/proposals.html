@@ -1,0 +1,26 @@
+{% assign number_proposals = site.proposals | size %}
+{% if number_proposals > 0 %}
+
+<h2>Proposals</h2>
+
+{% assign tags =  site.proposals | map: 'tags' | join: ','  | split: ',' | uniq %}
+{% for tag in tags %}
+<h3>{{ tag }}</h3>
+
+<br>
+
+<ul>
+{% for proposal in site.proposals %}{% if proposal.tags contains tag %}
+    <li><a href="{{ site.baseurl }}{{ proposal.url }}">{{ proposal.title }}</a></li>{% endif %}
+{% endfor %}
+</ul>
+{% endfor %}
+
+
+{% include callout.html text="Hey, check out our proposals above! We definitely are looking forward to your feedback." %}
+
+{% else %}
+
+{% include callout.html text="We don't have any proposals yet - come back soon!" %}
+
+{% endif %}
