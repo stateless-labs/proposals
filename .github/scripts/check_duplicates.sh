@@ -7,8 +7,8 @@ set -e
 # Either get proposals from action, or on reopen, derive
 for file in ${proposals}; do
     name=$(basename ${file})
-    dir=$(dirname ${file})
-    if [[ "${dir}" == "*proposals*" ]]; then
+    dir=$(basename $(dirname ${file}))
+    if [[ "${dir}" == "proposals" ]]; then
         printf "Including $file\n"  
         proposals="$name $proposals"
     else
