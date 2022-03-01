@@ -60,7 +60,7 @@ def check_duplicates(files):
             continue
         print("Checking #%s" % pr.number)
         response = requests.get(
-            "https://api.github.com/repos/%s/pulls/%s/files" % (repo_name, number)
+            "https://api.github.com/repos/%s/pulls/%s/files" % (repo_name, pr.number)
         )
         files = [
             x["filename"]
