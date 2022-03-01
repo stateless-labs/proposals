@@ -8,7 +8,7 @@ set -e
 for file in ${proposals}; do
     name=$(basename ${file})
     dir=$(dirname ${file})
-    if [[ "${dir}" == "proposals" ]]; then
+    if [[ "${dir}" == "*proposals*" ]]; then
         printf "Including $file\n"  
         proposals="$name $proposals"
     else

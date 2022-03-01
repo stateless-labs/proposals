@@ -74,7 +74,7 @@ def check_duplicates(files):
     worked_on = set(worked_on)
     for file in files:
         dirname = os.path.dirname(file)
-        if dirname != "proposals":
+        if not dirname.endswith("proposals"):
             continue
 
         if file in worked_on:
