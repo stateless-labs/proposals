@@ -62,7 +62,6 @@ accent_color: "#222"
 draft_color: "#3282B8"
 incubating_color: "#FFAA4C"
 graduated_color: "#344CB7"
-graduated_color: "#41b712"
 paused_color: "#e7c02c"
 
 # Permalink colors (commented out uses default)
