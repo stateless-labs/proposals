@@ -1,6 +1,6 @@
 ---
 layout: page
-title: rse-ops projects
+title: Stateless Labs Projects
 permalink: /
 ---
 

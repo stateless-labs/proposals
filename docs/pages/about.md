@@ -3,7 +3,7 @@ title: About
 permalink: /about/
 ---
 
-This is a collaborative space under rse-ops to work on resources and good practices for open source software across the research software engineering and open source communities. This work is a part of rse-ops and falls under the scope of [RADIUSS](https://software.llnl.gov/radiuss/).
+This is a collaborative space under Stateless Labs to work on resources and good practices for open source software across the research software engineering and open source communities.
 
 ## Support
 
